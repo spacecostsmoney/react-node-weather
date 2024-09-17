@@ -13,6 +13,4 @@ Commands to get started
 3. Switch to the appropriate node version with `nvm use`
 4. Install npm dependencies `npm ci`
 5. Run project with hot reloading `npm run dev`
-6. Server will be available at: http://localhost:3000
-
-There's a helpful file for running HTTP requests to test things out locally should you need it [Server Example Requests](./example-requests/weather.http)
+6. UI will be available at: http://localhost:5173/
