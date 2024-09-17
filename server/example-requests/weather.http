@@ -1,5 +1,6 @@
-### GET request to get forecast
-GET http://localhost:3000/weather?street=asdfasd&zipcode=50266
-###
+@street_address = EXAMPLE_ADDRESS_CHANGE_ME
+@zipcode = EXAMPLE_ZIPCODE_CHANGE_ME
 
-GET https://geocoding.geo.census.gov/geocoder/locations/address?street=asdfasd&zip=11111&benchmark=Public_AR_Current&format=json
+### Request to get forecast
+GET http://localhost:3000/weather?street={{street_address}}&zipcode=${{zipcode}}
+###
