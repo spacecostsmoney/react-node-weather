@@ -1,0 +1,5 @@
+### GET request to get forecast
+GET http://localhost:3000/weather?street=asdfasd&zipcode=50266
+###
+
+GET https://geocoding.geo.census.gov/geocoder/locations/address?street=asdfasd&zip=11111&benchmark=Public_AR_Current&format=json
