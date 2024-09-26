@@ -21,15 +21,15 @@ weatherRoutes.get('/', async (req: Request<{}, {}, {}, Query>, res: Response, ne
 
     const {street, zipcode} = req.query;
 
-    if (!street) {
-        errors.push("Must provide a street query parameter");
+    if (typeof street !== 'string') {
+        errors.push("Must provide a valid street query parameter");
     }
 
-    if (!zipcode) {
-        errors.push("Must provide a zipcode query parameter");
+    if (typeof zipcode !== 'string') {
+        errors.push("Must provide a valid zipcode query parameter");
     }
 
-    if (zipcode.length !== 5) {
+    if (zipcode && zipcode.length !== 5) {
         errors.push("Zip code must be 5 characters long");
     }
 
